@@ -33,7 +33,15 @@
     </p>
   </form>
   <?php
-  $sql = "SELECT * FROM color ORDER BY created_at DESC";
+  // Build SQL
+  $sql = "SELECT * FROM color";
+  if (isset($_GET["search"])) {
+    $search = mysqli_real_escape_string($connection, $_GET["search"]);
+    $sql .= " WHERE title LIKE '%$search%'";
+  }
+  $sql .= " ORDER BY created_at DESC;";
+
+  // Query
   $result = mysqli_query($connection, $sql);
   $rows = mysqli_fetch_all($result, MYSQLI_ASSOC);
   $count_rows = count($rows);
