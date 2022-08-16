@@ -10,5 +10,6 @@
 <body>
     <h2>Colorfull 09AF</h2>
     <div>Output here</div>
+    <div><?php var_dump($connection); ?></div>
 </body>
 </html>
