@@ -1,0 +1,7 @@
+<?php
+$username = "your_username";
+$password = "your_password";
+$host = "your_host";
+$port = your_port;
+$dbname = "your_db_name";
+?>
