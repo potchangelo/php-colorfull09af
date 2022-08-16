@@ -1,4 +1,13 @@
 <?php require("utils/db.php"); ?>
+<?php
+function createColor($connection) {
+  $code = mysqli_real_escape_string($connection, $_POST["code"]);
+  $title = mysqli_real_escape_string($connection, $_POST["title"]);
+  $sql = "INSERT INTO color (code, title) VALUES ('$code', '$title');";
+  $result = mysqli_query($connection, $sql);
+  return $result;
+}
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,12 +21,7 @@
 
 <body>
   <?php if ($_SERVER["REQUEST_METHOD"] == "POST") : ?>
-    <?php
-    $code = mysqli_real_escape_string($connection, $_POST["code"]);
-    $title = mysqli_real_escape_string($connection, $_POST["title"]);
-    $sql = "INSERT INTO color (code, title) VALUES ('$code', '$title');";
-    $result = mysqli_query($connection, $sql);
-    ?>
+    <?php $result = createColor($connection); ?>
     <?php if ($result) : ?>
       <h2>เพิ่มสีใหม่เรียบร้อย</h2>
       <p>
