@@ -1,0 +1,32 @@
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  padding: 16px;
+}
+
+.container {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.color-item {
+  background-color: white;
+  border-width: 16px;
+  border-style: solid;
+  border-color: black;
+  margin-bottom: 16px;
+  padding: 12px;
+}
+
+.site-header {
+  text-align: center;
+  padding: 16px;
+}
