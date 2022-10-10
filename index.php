@@ -7,7 +7,7 @@ function getColors($connection) {
     $search = mysqli_real_escape_string($connection, $_GET["search"]);
     $sql .= " WHERE title LIKE '%$search%'";
   }
-  $sql .= " ORDER BY created_at DESC;";
+  $sql .= " ORDER BY id DESC;";
 
   // Query
   $result = mysqli_query($connection, $sql);
