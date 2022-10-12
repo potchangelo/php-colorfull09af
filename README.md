@@ -3,14 +3,14 @@
 ตัวอย่างโปรเจ็ค PHP จากคลิป "สอน PHP เบื้องต้น จนใช้ได้จริง" ของ Zinglecode
 
 
-## YouTube Video
+## YouTube video
 
 https://youtu.be/SSkmhiiGuNA
 
 
 ## Setup database table
 
-![color table structure](https://raw.githubusercontent.com/potchangelo/express-feelfriends/main/snapshots/db-table-post-structure.jpg "color table structure")
+![color table structure](https://github.com/potchangelo/php-colorfull09af/blob/main/snapshots/db-table-color-structure.jpg "color table structure")
 *color table structure*
 
 
